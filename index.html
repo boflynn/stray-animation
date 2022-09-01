@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stray Animation</title>
+</head>
+
+<body>
+  <svg viewBox="-1000 -1000 2000 2000" style="background-color: #744133">
+    <defs>
+      <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+        <stop offset="0%" style="stop-color:#E9E1BD;
+      stop-opacity:0" />
+        <stop offset="100%" style="stop-color:#DFB419;stop-opacity:1" />
+      </radialGradient>
+    </defs>
+
+    <path id="path" d="M -100,-800 a 600,500 0 1,0 1,0" style="stroke: #00f;stroke-width:3; fill: red;">
+    </path>
+
+    <path id="quote" d="M-900,-900 L900,-900 L900,600 L700,600 L700,900 L-200,600 L-900,600 L-900,-900"
+      style="stroke: #00f;stroke-width:0; fill: #DFB419;">
+
+    </path>
+    <ellipse cx="0" cy="-100" rx="400" ry="400" fill="url(#grad1)" />
+    <rect width="300" height="300" style="fill:rgb(165,99,28);stroke-width:0;stroke:rgb(0,0,0)" id="rect1">
+      <animateMotion begin="0s" dur="2s" rotate="0" fill="freeze" repeatCount="indefinite">
+        <mpath xlink:href="#path"></mpath>
+      </animateMotion>
+    </rect>
+    <rect width="250" height="250" style="fill:rgb(165,99,28);stroke-width:0;stroke:rgb(0,0,0)" id="rect2">
+      <animateMotion begin=".25s" dur="2s" rotate="0" fill="freeze" repeatCount="indefinite">
+        <mpath xlink:href="#path"></mpath>
+      </animateMotion>
+    </rect>
+    <rect width="200" height="200" style="fill:rgb(165,99,28);stroke-width:0;stroke:rgb(0,0,0)" id="rect3">
+      <animateMotion begin=".5s" dur="2s" rotate="0" fill="freeze" repeatCount="indefinite">
+        <mpath xlink:href="#path"></mpath>
+      </animateMotion>
+    </rect>
+    <rect width="148" height="150" style="fill:rgb(165,99,28);stroke-width:0;stroke:rgb(0,0,0)" id="rect4">
+      <animateMotion begin=".75s" dur="2s" rotate="0" fill="freeze" repeatCount="indefinite">
+        <mpath xlink:href="#path"></mpath>
+      </animateMotion>
+    </rect>
+
+  </svg>
+</body>
+
+</html>
